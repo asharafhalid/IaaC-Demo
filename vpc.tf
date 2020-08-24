@@ -4,6 +4,6 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name = "demo-vpc"
-    Purpose = "Jenkins Demo- Auto Deployed"
+    Purpose = "Jenkins Demo- Auto Deploye-with git commit"
   }
 }
