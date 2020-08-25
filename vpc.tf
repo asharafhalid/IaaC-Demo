@@ -7,3 +7,13 @@ resource "aws_vpc" "main" {
     Purpose = "Jenkins Demo- Auto Deploye-with git commit"
   }
 }
+
+resource "aws_instance" "Web" {
+  ami           = "ami-02354e95b39ca8dec"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
+
