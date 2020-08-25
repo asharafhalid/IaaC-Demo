@@ -1,4 +1,4 @@
-resource "aws_instance" "Web" {
+resource "aws_instance" "db-server" {
   ami           = "ami-02354e95b39ca8dec"
   instance_type = "t2.micro"
 
