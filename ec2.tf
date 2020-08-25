@@ -17,6 +17,6 @@ resource "aws_security_group" "dbsec"{
     from_port=22
     to_prort =22
     protocol ="tcp"
-    cidr_blocks = [0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 }
