@@ -13,7 +13,7 @@ resource "aws_instance" "Web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "HelloWorld from VSC"
   }
 }
 
