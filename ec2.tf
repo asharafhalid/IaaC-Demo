@@ -1,7 +1,7 @@
 resource "aws_instance" "db-server" {
   ami           = "ami-02354e95b39ca8dec"
   instance_type = "t2.micro"
-  secuirty_groups =[aws_security_group.dbsec.name]
+  security_groups =[aws_security_group.dbsec.name]
 
   tags = {
     Name = "HelloWorld-2"
