@@ -20,3 +20,15 @@ resource "aws_security_group" "dbsec"{
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+output "instance_public_dns" {
+  value       = aws_instance.db-server.instance_public_dns
+  #sensitive   = true
+  
+}
+
+output "instance_public_ip" {
+  value       = aws_instance.db-server.public_ip
+  #sensitive   = true
+  
+}
