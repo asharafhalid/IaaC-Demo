@@ -22,7 +22,7 @@ resource "aws_security_group" "dbsec"{
 }
 
 output "instance_public_dns" {
-  value       = aws_instance.db-server.instance_public_dns
+  value       = aws_instance.db-server.public_dns
   #sensitive   = true
   
 }
